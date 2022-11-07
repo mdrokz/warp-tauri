@@ -5,7 +5,9 @@ import "./index.css";
 
 import Welcome from './components/Welcome';
 
-export function App<FC>() {
+import Send from './components/Send';
+
+export function App() {
   const [greetMsg, setGreetMsg] = useState<string>("");
   const [name, setName] = useState<string>("");
 
@@ -17,6 +19,7 @@ export function App<FC>() {
   return (
     <div>
       <Welcome />
+      <Send />
     </div>
   );
 }
